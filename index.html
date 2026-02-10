@@ -2,10 +2,14 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Para Ti ❤️</title>
+  <title>Para Ulises ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
 
   <div class="card">
     <h1>Para el amor de mi vida ❤️Ulises❤️</h1>
@@ -14,11 +18,13 @@
       Si pudiera elegir un lugar seguro,  
       sería a tu lado.  
       <br><br>
-      Cuanto más tiempo estoy contigo,  
-      más te amo.
+      Cada segundo contigo  
+      hace que mi corazón te ame más.
     </p>
 
-    <h2>💘 Te amo desde hace:</h2>
+    <button onclick="reproducir()">💖 Te amo 💖</button>
+
+    <h2>💘 Mi amor por ti comenzó hace:</h2>
     <div id="contador"></div>
   </div>
 
