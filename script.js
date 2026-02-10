@@ -28,3 +28,6 @@ setInterval(() => {
 
   setTimeout(() => heart.remove(), 5000);
 }, 300);
+function reproducir() {
+  document.getElementById("musica").play();
+}
