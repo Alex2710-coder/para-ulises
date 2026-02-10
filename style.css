@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff4d6d, #ff758f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+  overflow: hidden;
+}
+
+.card {
+  background: #fff0f3;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  animation: aparecer 1.5s ease;
+}
+
+h1 {
+  color: #c9184a;
+}
+
+p {
+  font-size: 18px;
+  color: #6a040f;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #9d0208;
+}
+
+#contador {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #370617;
+}
+
+@keyframes aparecer {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Corazones flotando */
+.heart {
+  position: absolute;
+  color: rgba(255,255,255,0.8);
+  font-size: 20px;
+  animation: flotar 5s linear infinite;
+}
+
+@keyframes flotar {
+  from {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+}
